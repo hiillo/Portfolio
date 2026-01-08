@@ -1,21 +1,94 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="css/style.css">
 
 <head>
-  <title>My Page</title>
+  <title>portfoilio page</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
 <body>
 
-
-  <div id="header"></div>
+  <!-- <div id="header"></div> --!>
   
+  <div class="main">
+    
+  
+    <div class="top-gradient"></div>
+
+    <div class ="center-text">
+      
+
+      <div class="text-main">
+        <h1 class="name">Hillo</h1>
+        <img src="images/profile.png"></img>
+        <div class="profile-text">
+          <h1>about me</h1>
+          <p>
+          Drawing addict <br>
+          絵描き中毒者<br>
+            (。・∀・)ノ
+          </p>
+        </div>
+      </div>
+
+
+      <div class="link-main">
+
+        <div class="link-container">
+          <img src="images/twitter.png" href="https://x.com/Hillo2137" target="_blank"></img> 
+          <p href="https://x.com/Hillo2137" target="_blank">Link to twitter</p>
+        </div>
+        
+        <div class="link-container">
+          <img src="images/bsky.png" href="https://bsky.app/profile/hillo826.bsky.social" target="_blank"> 
+          <p href="https://bsky.app/profile/hillo826.bsky.social" target="_blank">Link to bluesky</p>
+
+        </div>
+        
+        <div class="link-container">
+          <img src="images/twitch.png" href="https://www.twitch.tv/Hillo_2137" target="_blank">
+          <p href="https://www.twitch.tv/Hillo_2137" target="_blank">Link to twitch</p>
+        </div>
+
+        <div class="link-container">
+          <img src="images/pixiv.jpg" href="https://www.pixiv.net/en/users/86669330" target="_blank">
+          <p href="https://www.pixiv.net/en/users/86669330 target="_blank">Link to pixiv</p>
+        </div>
+        
+        <div class="link-container">
+          <img src="images/vgen.png" >
+          <p >work in progress</p>
+        </div>
+
+      </div>
+      
+    </div>
+
+
+        
+
+    <div>
+      <img src="images/img1.png" class="heading-image"></img>
+    </div>
+    
+    <div class="notice"> <p>mobile version coming later<p></div>
+
+  </div>
+  
+  <!--<div id="footer"></div>--!> 
 
 <script>
   fetch("header.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("header").innerHTML = data;
+    });
+
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
     });
 </script>
 
