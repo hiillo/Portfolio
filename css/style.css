@@ -110,7 +110,9 @@ cursor:default;
   padding: clamp(3px, 2vh, 20px);
   min-height: 40px;
 }
-
+.link-container a {
+  display: contents;
+}
 
 .link-container img {
   cursor: crosshair;
